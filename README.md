@@ -7,7 +7,7 @@ Currently this package has only 1 component.
 ```javascript
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { PateryButton } from '@patery-ui/components';
+import { PateryButton } from 'patery-ui-components';
  
 class App extends Component {
     render()
