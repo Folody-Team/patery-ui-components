@@ -1,4 +1,4 @@
-# @patery-ui/components
+# patery-ui-components
 ### A component library for React
 <br/>
 Currently this package has only 1 component.
