@@ -1,10 +1,14 @@
 .PateryButton {
-  border-radius: 4px;
+  border-radius: 0.8em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
   border: none;
   margin: 8px;
-  padding: 14px 24px;
+  padding: 14px 15px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -17,7 +21,7 @@
   content: "";
   border-radius: 9999px;
   opacity: 1;
-  animation: 0.9s ease 1 forwards ripple-effect;
+  animation: 1.4s ease 1 forwards ripple-effect;
 }
 
 @keyframes ripple-effect {
@@ -26,7 +30,7 @@
     opacity: 1;
   }
   50% {
-    transform: scale(10);
+    transform: scale(20);
     opacity: 0.375;
   }
   100% {
@@ -36,6 +40,7 @@
 }
 
 .PateryButton > .content {
+  padding: 0px 10px;
   position: relative;
   z-index: 2;
 }
@@ -43,7 +48,48 @@
     background-color: rgb(34, 34, 34);
     color: rgb(221, 221, 221);
 }
+.dark:hover{
+    background-color: rgb(26, 26, 26);
+    color: rgb(221, 221, 221);
+}
 .light{
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(233, 233, 233);
     color: rgb(99, 99, 99);
+}
+.light:hover{
+    background-color: rgb(221, 221, 221);
+    color: rgb(99, 99, 99);
+}
+.mint{
+    background-color: rgba(228, 228, 228, 0.487);
+    color: rgb(97, 97, 97);
+}
+.PatteryInput{
+    border-radius: 0.8em;
+    width: 100%;
+    font-size: 16px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+    padding: 8px 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.PatteryInput:focus{
+    outline: none;
+}
+.Input-container{
+  display: flex;
+  border-radius: 0.8em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
+  margin: 8px;
+}
+.dark:hover .PatteryInput{
+  background-color: rgb(26, 26, 26);
+}
+.light:hover .PatteryInput{
+  background-color: rgb(221, 221, 221);
 }

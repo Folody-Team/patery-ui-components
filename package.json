@@ -41,5 +41,9 @@
   "bugs": {
     "url": "https://github.com/Folody-Team/-patery-ui-components/issues"
   },
-  "homepage": "https://github.com/Folody-Team/-patery-ui-components#readme"
+  "homepage": "https://github.com/Folody-Team/-patery-ui-components#readme",
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16"
+  }
 }
