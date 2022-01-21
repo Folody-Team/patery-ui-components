@@ -4,6 +4,16 @@
 <br/>
 Currently this package has only 1 component.
 
+## Install
+### npm
+```sh
+npm install patery-ui-components
+```
+### yarn
+```sh
+yarn add patery-ui-components
+```
+
 ## Example
 ```javascript
 import React, { Component } from 'react';
