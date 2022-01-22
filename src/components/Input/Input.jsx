@@ -1,5 +1,5 @@
 import '../../style.css';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { checkDarkLight } from '../../function'
 export const PateryInput = ({
     type,

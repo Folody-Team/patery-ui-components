@@ -31,8 +31,8 @@ stories.add('App', () => {
             }/>
             <PateryInput 
                 placeholder="Patery UI is the best" 
-                component={
-                <PateryButton className="hello">Search</PateryButton>
+                component={   
+                <img src="https://i.pinimg.com/564x/c9/d2/e8/c9d2e86d969935c851f859225074bdb8.jpg"/>
             }/>
             <p>{number}</p>
         </>
