@@ -20,6 +20,9 @@ stories.add('App', () => {
                 setNumber(number + 1);
             }}>Learn more</PateryButton>
             <PateryInput
+                onChange={e => {
+                    console.log(e.target.value);
+                }}
                 placeholder="Patery UI is the best" 
                 component={
                 <PateryButton className="hello">Search</PateryButton>

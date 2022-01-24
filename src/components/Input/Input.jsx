@@ -41,7 +41,12 @@ export const PateryInput = ({
             className ? color + ' ' + 'Input-container' + className :  color + ' ' + 'Input-container'
         }>
             <input
+                // get all attributes of input element and pass them to the input element using props
                 {...props}
+                type={type}
+                name={name}
+                value={value}
+                onChange={onChange}
                 placeholder={placeholder ? placeholder : ''}
                 onFocus={(e) => {
                     const rect = e.target.getBoundingClientRect();
