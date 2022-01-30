@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { PateryButton } from '../components/Button';
 import { PateryInput } from '../components/Input';
+import { PateryLogin } from '../components/Login';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJava } from '@fortawesome/free-brands-svg-icons'
@@ -14,30 +15,22 @@ stories.add('App', () => {
     const [number, setNumber] = useState(0);
     return (
         <>
-            <PateryButton
-                types="mint"
-                onClick={() => {
-                setNumber(number + 1);
-            }}>Learn more</PateryButton>
-            <PateryInput
-                onChange={e => {
-                    console.log(e.target.value);
-                }}
-                placeholder="Patery UI is the best" 
-                component={
-                <PateryButton className="hello">Search</PateryButton>
-            }/>
-            <PateryInput
-                placeholder="Patery UI is the best"  
-                component={
-                <PateryButton className="hello">Search</PateryButton>
-            }/>
-            <PateryInput 
-                placeholder="Patery UI is the best" 
-                component={   
-                <img src="https://i.pinimg.com/564x/c9/d2/e8/c9d2e86d969935c851f859225074bdb8.jpg"/>
-            }/>
-            <p>{number}</p>
+            <PateryLogin 
+                flex='column' 
+                heading='Login' 
+                text={[
+                {label: "Username", inputComponent: <PateryInput className={"padding"} inputStyle="light" placeholder="Username" />},
+                {label: "Password", inputComponent: <PateryInput className={"padding"} inputStyle="light" type="password" placeholder="Password" />}
+                ]}
+                button={[
+                    <PateryButton className={"padding"} onClick={() => setNumber(number + 1)}>Login</PateryButton>
+                ]}
+                image="https://www.w3schools.com/w3css/img_lights.jpg"
+            />
+            <img style={{
+                width: "100%",
+                height: "100%",
+            }} src='https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGQlMjBpbWFnZXxlbnwwfHwwfHw%3D&w=1000&q=80'/>
         </>
     );
 });

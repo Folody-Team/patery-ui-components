@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 .PateryButton {
   border-radius: 0.8em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
@@ -64,7 +69,7 @@
     background-color: rgba(228, 228, 228, 0.487);
     color: rgb(97, 97, 97);
 }
-.PatteryInput{
+.PateryInput{
     border-radius: 0.8em;
     width: 100%;
     font-size: 16px;
@@ -76,18 +81,43 @@
     align-items: center;
     justify-content: center;
 }
-.PatteryInput:focus{
+.PateryInput:focus{
     outline: none;
 }
 .Input-container{
   display: flex;
   border-radius: 0.8em;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
-  margin: 8px;
+  margin: 8px 0px;
 }
-.dark:hover .PatteryInput{
+.dark:hover > .PatteryInput{
+    background-color: rgb(26, 26, 26);
+}
+.Input-container:hover .PatteryInput{
   background-color: rgb(26, 26, 26);
 }
-.light:hover .PatteryInput{
+.light:hover > .PatteryInput{
   background-color: rgb(221, 221, 221);
+}
+.PateryInputCheck{
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+  outline: none;
+  background-color: royalblue;
+}
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+.form-group{
+  display: flex;
+  padding: 10px;
+}
+.flex-row{
+  flex-direction: row;
 }

@@ -1,6 +1,6 @@
 import "../../style.css";
 import React, { useEffect, useState } from "react";
-import { checkDarkLight } from "../../function";
+import { checkDarkLight, uuid } from '../../function'
 export const PateryButton = ({
   children,
   className,
@@ -9,6 +9,7 @@ export const PateryButton = ({
   types,
   background,
   icon,
+  buttonStyle,
   // all props of button element will be passed to the button element as is
   ...props
 }) => {
@@ -26,7 +27,8 @@ export const PateryButton = ({
   }, [isRippling]);
   // check dark mode and light mode of browser to set the color of the button in react
     useEffect(() => {
-        const darkLight = checkDarkLight(".PatteryButton");
+      if(buttonStyle === "on"){
+        const darkLight = checkDarkLight(".PateryButton");
         if (darkLight === "dark") {
             setColor("dark");
         } else if (darkLight === "light") {
@@ -34,6 +36,11 @@ export const PateryButton = ({
         } else {
             setColor("light");
         }
+      } if(buttonStyle === "off"){
+        setColor("light");
+      } else {
+        new TypeError("buttonStyle must be 'on' or 'off'");
+      }
     }, []);
   return (
     <button

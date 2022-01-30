@@ -1,6 +1,6 @@
 {
   "name": "patery-ui-components",
-  "version": "1.0.6",
+  "version": "1.0.11",
   "description": "A component library for React",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -37,7 +37,7 @@
     "type": "git",
     "url": "git+https://github.com/Folody-Team/-patery-ui-components.git"
   },
-  "keywords": [],
+  "keywords": ["react", "ui", "component", "library", "patery", "patery-ui", "patery-ui-components"],
   "bugs": {
     "url": "https://github.com/Folody-Team/-patery-ui-components/issues"
   },
