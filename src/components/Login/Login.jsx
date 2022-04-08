@@ -64,7 +64,7 @@ export const PateryLogin = ({
                     
                 {window.outerWidth < 600 ? (<></>): (<>
                     {image ? (<>
-                    <img src={image} onContextMenu={() => {return false}} alt="" style={
+                    <img src={image} onContextMenu={() => {return false}} style={
                         {
                             height: "100vh",
                             width: "500px",
